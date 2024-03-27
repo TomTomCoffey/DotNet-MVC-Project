@@ -28,3 +28,4 @@
 /Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/obj/Debug/net8.0/MyProject.pdb
 /Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/obj/Debug/net8.0/MyProject.genruntimeconfig.cache
 /Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/obj/Debug/net8.0/ref/MyProject.dll
+/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/obj/Debug/net8.0/MyProject.sourcelink.json

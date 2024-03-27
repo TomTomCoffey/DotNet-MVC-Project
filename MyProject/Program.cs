@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Mvc.Routing;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -19,6 +21,14 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.MapControllerRoute(
+    ///i want the url to be like this movies/released/{year}/{month}
+    name: "MoviesByReleaseDate",
+    pattern: "/movies/released/{year}/{month}",
+    defaults: new { controller = "Movies", action = "ByReleaseDate" }
+
+);
 
 app.MapControllerRoute(
     name: "default",
