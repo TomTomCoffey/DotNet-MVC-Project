@@ -11,17 +11,17 @@ namespace MyProject.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Customers",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Customers", x => x.Id);
-                });
+     name: "Customers",
+     columns: table => new
+     {
+         Id = table.Column<int>(type: "int", nullable: false)
+             .Annotation("SqlServer:Identity", "1, 1"),
+         Name = table.Column<string>(type: "text", nullable: true) // Change type to "text"
+     },
+     constraints: table =>
+     {
+         table.PrimaryKey("PK_Customers", x => x.Id);
+     });
 
             migrationBuilder.CreateTable(
                 name: "Movies",
@@ -29,7 +29,7 @@ namespace MyProject.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Name = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -93,3 +93,6 @@ npm-debug.log*
 *.trx
 *.config.user
 *.SCC
+
+
+appsettings.json
