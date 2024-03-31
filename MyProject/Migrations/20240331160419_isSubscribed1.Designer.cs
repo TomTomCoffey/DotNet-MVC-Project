@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MyProject.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240331160419_isSubscribed1")]
+    partial class isSubscribed1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,36 +34,12 @@ namespace MyProject.Migrations
                     b.Property<bool>("IsSubscribedToNewsletter")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<byte>("MembershipTypeId")
-                        .HasColumnType("tinyint unsigned");
-
                     b.Property<string>("Name")
                         .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MembershipTypeId");
-
                     b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("MyProject.Models.MembershipType", b =>
-                {
-                    b.Property<byte>("Id")
-                        .HasColumnType("tinyint unsigned");
-
-                    b.Property<byte>("DiscountRate")
-                        .HasColumnType("tinyint unsigned");
-
-                    b.Property<byte>("DurationInMonths")
-                        .HasColumnType("tinyint unsigned");
-
-                    b.Property<short>("SignUpFee")
-                        .HasColumnType("smallint");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("MembershipType");
                 });
 
             modelBuilder.Entity("MyProject.Models.Movie", b =>
@@ -77,17 +56,6 @@ namespace MyProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Movies");
-                });
-
-            modelBuilder.Entity("MyProject.Models.Customer", b =>
-                {
-                    b.HasOne("MyProject.Models.MembershipType", "MembershipType")
-                        .WithMany()
-                        .HasForeignKey("MembershipTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("MembershipType");
                 });
 #pragma warning restore 612, 618
         }
