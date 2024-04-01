@@ -8,3 +8,20 @@
 <h2>Details</h2>
 
 <p>@Model.Name </p>
+
+<ul>
+    <li>
+        Memebership Type: @Model.MembershipType.Name
+    </li>
+
+    @if (Model.Birthdate != null)
+    {
+        <li>
+            <p>Birthdate: @Model.Birthdate.Value.ToShortDateString()</p>
+        </li>
+    }
+
+
+
+
+</ul>

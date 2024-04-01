@@ -8,9 +8,24 @@ namespace MyProject.Controllers
     public class MoviesController : Controller
     {
 
+        private ApplicationDbContext _context;
+
+        public MoviesController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
+
+
+
         public ActionResult Index()
         {
-            var movies = GetMovies();
+            var movies = _context.Movies?.ToList();
 
             return View(movies);
         }
@@ -25,7 +40,7 @@ namespace MyProject.Controllers
         }
         public IActionResult Details(int id)
         {
-            var movie = GetMovies().SingleOrDefault(c => c.Id == id);
+            var movie = _context.Movies?.SingleOrDefault(c => c.Id == id);
 
             if (movie == null)
                 return NotFound();
