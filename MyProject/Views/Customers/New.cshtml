@@ -1,0 +1,56 @@
+@model MyProject.ViewModels.NewCustomerViewModel
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sign up now!</h2>
+
+<div class="container"
+@using (Html.BeginForm("Create", "Customers"))
+{
+
+    <div class="form-group">
+    @Html.LabelFor(m => m.Customer.Name)
+    @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" })
+</div>
+
+    <div class="form-group">
+    @Html.LabelFor(m => m.Customer.Birthdate)
+    @Html.TextBoxFor(m => m.Customer.Birthdate, new { @class = "form-control" })
+</div>
+
+
+
+    <div class="form-group">
+    @Html.DropDownListFor(m => m.Customer.MembershipTypeId, new SelectList(Model.MembershipTypes, "Id", "Name"), "Select Membership Type", new { @class = "form-control" })
+  </div>
+
+      <div class="checkbox">
+    <label>
+        @Html.CheckBoxFor(m => m.Customer.IsSubscribedToNewsletter) Subscribed to Newsletter
+    </label>
+</div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    
+}
+
+</div>
+
+<style>
+    .container {
+        margin-top: 20px;
+        width: 50%;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .checkbox {
+        margin-top: 20px;
+    }
+    .btn{
+        margin-top: 20px;
+    }
+</style>
