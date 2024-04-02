@@ -18,16 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/Views/Customers/CustomerForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0N1c3RvbWVyRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/Views/Customers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/Views/Customers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL0luZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/Views/Customers/New.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXJzL05ldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/Views/Home/Index.cshtml]

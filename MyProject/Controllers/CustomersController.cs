@@ -50,7 +50,7 @@ namespace MyProject.Controllers
                 MembershipTypes = membershipTypes!
             };
 
-            return View(viewModel);
+            return View("CustomerForm", viewModel);
 
         }
         [HttpPost]
@@ -61,6 +61,22 @@ namespace MyProject.Controllers
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Customers");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var customer = _context.Customers?.SingleOrDefault(c => c.Id == id);
+
+            if (customer == null)
+                return NotFound();
+
+            var viewModel = new NewCustomerViewModel
+            {
+                Customer = customer,
+                MembershipTypes = _context.MembershipType?.ToList()
+            };
+
+            return View("CustomerForm", viewModel);
         }
 
 
