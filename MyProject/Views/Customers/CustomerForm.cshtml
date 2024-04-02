@@ -6,8 +6,8 @@
 
 <h2>Sign up now!</h2>
 
-<div class="container"
-@using (Html.BeginForm("Create", "Customers" , FormMethod.Post))
+
+@using (Html.BeginForm("Save", "Customers"))
 {
 
     <div class="form-group">
@@ -31,19 +31,17 @@
         @Html.CheckBoxFor(m => m.Customer.IsSubscribedToNewsletter) Subscribed to Newsletter
     </label>
 </div>
+    @Html.HiddenFor(m => m.Customer.Id)
 
     <button type="submit" class="btn btn-primary">Submit</button>
 
     
 }
 
-</div>
+
 
 <style>
-    .container {
-        margin-top: 20px;
-        width: 50%;
-    }
+    
     .form-group {
         margin-bottom: 20px;
     }
