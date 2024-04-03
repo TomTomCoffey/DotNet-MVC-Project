@@ -48,6 +48,20 @@ namespace MyProject.Migrations
                     b.ToTable("Customers");
                 });
 
+            modelBuilder.Entity("MyProject.Models.Genre", b =>
+                {
+                    b.Property<byte>("Id")
+                        .HasColumnType("tinyint unsigned");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Genres");
+                });
+
             modelBuilder.Entity("MyProject.Models.MembershipType", b =>
                 {
                     b.Property<byte>("Id")
@@ -82,9 +96,8 @@ namespace MyProject.Migrations
                     b.Property<DateTime?>("DateAdded")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Genre")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<byte>("GenreId")
+                        .HasColumnType("tinyint unsigned");
 
                     b.Property<string>("Name")
                         .HasColumnType("longtext");
@@ -96,6 +109,8 @@ namespace MyProject.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("GenreId");
 
                     b.ToTable("Movies");
                 });
@@ -109,6 +124,17 @@ namespace MyProject.Migrations
                         .IsRequired();
 
                     b.Navigation("MembershipType");
+                });
+
+            modelBuilder.Entity("MyProject.Models.Movie", b =>
+                {
+                    b.HasOne("MyProject.Models.Genre", "Genre")
+                        .WithMany()
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Genre");
                 });
 #pragma warning restore 612, 618
         }

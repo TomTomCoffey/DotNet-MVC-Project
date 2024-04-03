@@ -83,7 +83,7 @@ namespace MyProject.Controllers
             var viewModel = new NewCustomerViewModel
             {
                 Customer = customer,
-                MembershipTypes = _context.MembershipType?.ToList()
+                MembershipTypes = _context.MembershipType!.ToList()
             };
 
             return View("CustomerForm", viewModel);
