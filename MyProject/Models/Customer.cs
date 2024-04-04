@@ -8,7 +8,7 @@ namespace MyProject.Models
     {
         public int Id { get; set; }
 
-
+        [Required]
         public string? Name { get; set; }
 
         public bool IsSubscribedToNewsletter { get; set; }
@@ -19,6 +19,8 @@ namespace MyProject.Models
         [Display(Name = "Membership Type")]
         public byte MembershipTypeId { get; set; }
 
+        [Display(Name = "Date of Birth")]
+        [Min18YearsIfAMember]
         public DateTime? Birthdate { get; set; }
 
     }
