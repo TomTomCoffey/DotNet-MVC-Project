@@ -9,6 +9,7 @@
 
 @using (Html.BeginForm("Save", "Customers"))
 {
+    @Html.AntiForgeryToken()
 
     <div class="form-group">
     @Html.LabelFor(m => m.Customer.Name)
@@ -41,6 +42,7 @@
     
 }
 
+<script> src="MyProject/wwwroot/lib/jquery-validation"</script>
 
 
 <style>
