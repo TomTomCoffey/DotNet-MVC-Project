@@ -71,6 +71,18 @@ namespace MyProject.Controllers
         [HttpPost]
         public IActionResult Save(Movie movie)
         {
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new NewMovieViewModel
+                {
+                    Movie = movie,
+                    Genres = _context.Genres?.ToList()
+                };
+
+                return View("MoviesForm", viewModel);
+            }
+
+
             if (movie.Id == 0)
             {
                 movie.DateAdded = DateTime.Now;
