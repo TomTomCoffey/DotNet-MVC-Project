@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8oioMCyht5jIhU4TvEGUC5h4IumIc/iVTISb1XlRFlkXwoYpPqHZTC6uH4daQsiUOqTWYBfKUQHCFzQAyvgLPA==",
+  "dgSpecHash": "Jr+1VmcU9tQKGxnF+iGoQoYnfw9PpDHMLME428F7wgR3sbL0FijnkAL399XaQpQIyle5BtL2/jGWGUxEJq7TIw==",
   "success": true,
   "projectFilePath": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/MyProject.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "/Users/tomcoffey/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/tomcoffey/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/tomcoffey/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/tomcoffey/.nuget/packages/jquery/1.7.0/jquery.1.7.0.nupkg.sha512",
+    "/Users/tomcoffey/.nuget/packages/jquery.datatables/1.10.15/jquery.datatables.1.10.15.nupkg.sha512",
     "/Users/tomcoffey/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/tomcoffey/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "/Users/tomcoffey/.nuget/packages/microsoft.codeanalysis.common/4.5.0/microsoft.codeanalysis.common.4.5.0.nupkg.sha512",
