@@ -17,6 +17,50 @@
       "PackagePath": "staticwebassets/js/site.js"
     },
     {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/CHANGELOG.md",
+      "PackagePath": "staticwebassets/lib/bootbox/CHANGELOG.md"
+    },
+    {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/bootbox/LICENSE.md"
+    },
+    {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/README.md",
+      "PackagePath": "staticwebassets/lib/bootbox/README.md"
+    },
+    {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/bootbox.js",
+      "PackagePath": "staticwebassets/lib/bootbox/bootbox.js"
+    },
+    {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/dist/bootbox.all.js",
+      "PackagePath": "staticwebassets/lib/bootbox/dist/bootbox.all.js"
+    },
+    {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/dist/bootbox.all.min.js",
+      "PackagePath": "staticwebassets/lib/bootbox/dist/bootbox.all.min.js"
+    },
+    {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/dist/bootbox.js",
+      "PackagePath": "staticwebassets/lib/bootbox/dist/bootbox.js"
+    },
+    {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/dist/bootbox.locales.js",
+      "PackagePath": "staticwebassets/lib/bootbox/dist/bootbox.locales.js"
+    },
+    {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/dist/bootbox.locales.min.js",
+      "PackagePath": "staticwebassets/lib/bootbox/dist/bootbox.locales.min.js"
+    },
+    {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/dist/bootbox.min.js",
+      "PackagePath": "staticwebassets/lib/bootbox/dist/bootbox.min.js"
+    },
+    {
+      "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootbox/package.json",
+      "PackagePath": "staticwebassets/lib/bootbox/package.json"
+    },
+    {
       "Id": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/wwwroot/lib/bootstrap/LICENSE",
       "PackagePath": "staticwebassets/lib/bootstrap"
     },

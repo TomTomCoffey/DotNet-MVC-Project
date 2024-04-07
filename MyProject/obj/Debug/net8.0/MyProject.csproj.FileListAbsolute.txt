@@ -138,3 +138,5 @@
 /Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/bin/Debug/net8.0/MySqlConnector.dll
 /Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/bin/Debug/net8.0/Pomelo.EntityFrameworkCore.MySql.dll
 /Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/bin/Debug/net8.0/AutoMapper.dll
+/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/bin/Debug/net8.0/package-lock.json
+/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/bin/Debug/net8.0/package.json
