@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using MyProject.Mapping;
 
 
 
@@ -14,6 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 
 

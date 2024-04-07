@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aMTMtP/5uffJlDWFThM8BxrEm+7HFibt9PGS4aUuvcBJ6b7ZfSSnG8cUwCrMhXacM6cR4vVjuWRUDnFpAlZlIg==",
+  "dgSpecHash": "8oioMCyht5jIhU4TvEGUC5h4IumIc/iVTISb1XlRFlkXwoYpPqHZTC6uH4daQsiUOqTWYBfKUQHCFzQAyvgLPA==",
   "success": true,
   "projectFilePath": "/Users/tomcoffey/Desktop/projects/Leetcode/MVC-Project/MyProject/MyProject.csproj",
   "expectedPackageFiles": [
+    "/Users/tomcoffey/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/tomcoffey/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/tomcoffey/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/tomcoffey/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
