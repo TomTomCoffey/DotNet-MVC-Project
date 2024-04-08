@@ -18,7 +18,7 @@
 }
 else
 {
-    <table class="table table-bordered table-hover">
+    <table id="movies" class="table table-bordered table-hover">
     <thead>
         <tr>
             <th>Movies</th>
@@ -35,27 +35,14 @@ else
     </table>
 }
 
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#movies').DataTable();
+        });
+    </script>
+}
 
 <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 2rem;
-    }
 
-    th {
-        background-color: #4CAF50;
-        color: white;
-    }
-
-    th,
-    td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        text-align: left;
-    }
-
-    tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
 </style>
