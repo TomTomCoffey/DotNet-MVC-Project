@@ -57,16 +57,16 @@ namespace MyProject.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer)
         {
-            if (!ModelState.IsValid)
-            {
-                var viewModel = new NewCustomerViewModel
-                {
-                    Customer = customer,
-                    MembershipTypes = _context.MembershipType!.ToList()
-                };
+            // if (!ModelState.IsValid)
+            // {
+            //     var viewModel = new NewCustomerViewModel
+            //     {
+            //         Customer = customer,
+            //         MembershipTypes = _context.MembershipType!.ToList()
+            //     };
 
-                return View("CustomerForm", viewModel);
-            }
+            //     return View("CustomerForm", viewModel);
+            // }
             if (customer.Id == 0)
             {
                 _context.Customers?.Add(customer);

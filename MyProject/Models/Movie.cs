@@ -11,7 +11,7 @@ namespace MyProject.Models
         public string? Name { get; set; }
 
         [Display(Name = "Release Date")]
-        [RealReleaseDate]
+        //[RealReleaseDate]
         public DateTime? ReleaseDate { get; set; }
 
         public DateTime? DateAdded { get; set; }

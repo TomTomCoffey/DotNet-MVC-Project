@@ -69,22 +69,24 @@ namespace MyProject.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Save(Movie movie)
         {
-            if (!ModelState.IsValid)
-            {
-                var viewModel = new NewMovieViewModel
-                {
-                    Movie = movie,
-                    Genres = _context.Genres?.ToList()
-                };
-
-                return View("MoviesForm", viewModel);
-            }
+            // if (!ModelState.IsValid)
+            // {
+            //     var viewModel = new NewMovieViewModel
+            //     {
+            //         Movie = movie,
+            //         Genres = _context.Genres?.ToList()
+            //     };
+            //     Console.WriteLine("Model State is not valid");
+            //     return View("MoviesForm", viewModel);
+            // }
 
 
             if (movie.Id == 0)
             {
+                Console.WriteLine("Movie ID is 0");
                 movie.DateAdded = DateTime.Now;
                 _context.Movies?.Add(movie);
             }
