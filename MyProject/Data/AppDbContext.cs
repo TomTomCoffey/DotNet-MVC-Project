@@ -1,7 +1,8 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MyProject.Models;
 
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext :  DbContext // IdentityDbContext<ApplicationUser>// <-- this is for identity
 {
 
     public ApplicationDbContext()
